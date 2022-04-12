@@ -137,8 +137,8 @@
   
   
   .navbar-default {
-    background-color: white;
-    border-color: rgba(34, 34, 34, 0.05);
+    background-color: black;
+    border-color: white;
     -webkit-transition: all 0.35s;
     -moz-transition: all 0.35s;
     transition: all 0.35s;
@@ -150,7 +150,7 @@
     font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
     font-weight: 400;
     letter-spacing: 1px;
-    color: #222222;
+    color: white;
   }
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
@@ -158,7 +158,7 @@
   }
   .navbar-default .navbar-header .navbar-toggle {
     font-size: 12px;
-    color: #222222;
+    color: white;
     padding: 8px 10px;
   }
   .navbar-default .nav > li > a {
