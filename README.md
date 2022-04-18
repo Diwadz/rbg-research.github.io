@@ -1,7 +1,7 @@
-# Stanford Machine Learning Group
+# RBG Research Group
 
 ## New members
-- Add a 400x400px JPG file to named *exactly* as FirstnameLastname.jpg to https://github.com/stanfordmlgroup/stanfordmlgroup.github.io/tree/master/img/headshots
+- Add a 305x294px JPG file to named *exactly* as FirstnameLastname.jpg to https://github.com/MadhumithaM2598/rbg-research.github.io/tree/master/img/Images
 - Notify an admin to add you to the group!
 
 ## To run (locally)
