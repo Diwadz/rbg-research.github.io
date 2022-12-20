@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <title>
-      CoRe-PooL
+      RBG.AI
     </title>
     <meta
       name="description"
@@ -23,10 +23,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <link rel="image_src" type="image/jpeg" href="/img/RBG logo/50x50.png" />
-    <link rel="shortcut icon" href="/img/RBG logo/50x50.png" type="image/x-icon" />
-    <link rel="icon" href="/img/RBG logo/50x50.png" type="image/x-icon" />
+    <link rel="image_src" type="image/jpeg" href="/img/RBG logo/rbg1.png" />
+    <link rel="shortcut icon" href="/img/RBG logo/rbg.png" type="image/x-icon" />
+    <link rel="icon" href="/img/RBG logo/rbg.png" type="image/x-icon" />
     <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css?family=Lato:400,600"
       rel="stylesheet"
@@ -50,48 +51,77 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="/js/analytics.js"></script>
   </head>
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
+  <body style="background-color: #6d9eeb;">
+   <nav style="background-color:#6d9eeb;height:20px;" class="navbar navbar-default navbar-fixed-top" id="mainNav">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display-->
         <div class="navbar-header">
-          <a class="navbar-brand page-scroll" href="/">RBG AI Research</a>
+          <button
+            class="navbar-toggle collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            Menu
+            <i class="fa fa-bars"></i>
+          </button>
+
+
+
+          <a class="navbar-brand page-scroll" href="/index.html">RBG AI Research</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="page-scroll" href="/index.html">Home</a>
+            </li>
+<!--            <li>-->
+<!--              <a class="page-scroll" href="#Contributors">Contributors</a>-->
+<!--            </li>-->
+           <li><a class="page-scroll" href="/research.html">research</a></li>
+<!--           <li><a class="page-scroll" href="#contact">Contact</a></li>-->
+             <li>
+              <a class="page-scroll" href="/teams.html" target="_blank">About us
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <section id="header">
+    <section style="background-color: #6d9eeb;" id="header">
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
             <h1>
-              CoRePooL - Corpus for Resource-Poor Languages
+              Enhanced object detection in floor-plan through super-resolution
             </h1>
             <p>
-              HB Barathi Ganesh, Jyothish Lal G, Soman K P, Jairam R & Kamal N S
+              Dev Khare, NS Kamal, HB Barathi Ganesh, V Sowmya & VV Sajith Varriya
             </p>
           </div>
         </div>
       </div>
     </section>
-    <section>
+    <section style="background-color:#f9f9f9">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>
-              We have deployed a deep learning-based application Voice-specific Human-Machine Interaction 
-              for low resource languages 
+            <h2 style="color:#6d9eeb">
+              We have deployed a deep learning-based application Voice-specific Human-Machine Interaction
+              for low resource languages
             </h2>
-            <p style="text-align: justify;">
+            <p style="text-align:justify;color:#6d9eeb">
               CoRePooL stands for Corpus for
               Resource-Poor Languages.It is a voice-specific Human-Machine Interaction application that is accelerated by deep learning algorithms.
               The annotation of supervised
-              corpus helps in performing Speech-to-Text, Text-to-Speech, Translation, Gender, and Speaker Identification. 
+              corpus helps in performing Speech-to-Text, Text-to-Speech, Translation, Gender, and Speaker Identification.
               Since these algorithms
               are data-hungry models, only very few resource-rich languages such as English,
               Ancient Greek, Latin, and Egyptian Language have a larger corpus to accommodate the deep learning algorithms. This is a big constraint for resource-poor languages in the speech domain where the data is limited.
               Deploying deep learning-based applications for low resource languages often
-              suffers from data scarcity resulting in poor performance of the model. 
+              suffers from data scarcity resulting in poor performance of the model.
               Here we aim to produce the corpus for resource-less Badaga language
               by setting baseline for speech and text analysis  with the help
               of deep learning based foundation models.
@@ -104,12 +134,12 @@
     </section>
 
 
-    <section class="gray">
+    <section style="background-color:#fff">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
               <img
-              src="/projects/Core-pool/img/Deep learning methods.png"
+              src="/projects/Core-pool/img/core2.png"
               style="max-height: 900px;"
               width="500"
             />
@@ -118,17 +148,17 @@
             <style>
               ul li { margin-bottom: 25px; }
           </style>
-            <h1>
-             The contributions of this paper 
+            <h1 style="color:#6d9eeb">
+             The contributions of this paper
             </h1>
-            <ul style= "list-style-type:circle"  style="line-height:1.4;" style="text-align: justify;">
-              <li style="text-align: justify;">We collated 420 minutes of annotated and 968 minutes of unannotated
+            <ul style= "list-style-type:circle"  style="line-height:1.4;" style="text-align: justify;color:#6d9eeb;">
+              <li style="text-align: justify;color:#6d9eeb;">We collated 420 minutes of annotated and 968 minutes of unannotated
                 corpus for Badaga in CoRePooL corpus.</li>
-              <li style="text-align: justify;"> We released 420 minutes of speech data for performing Speech-to-Text,
+              <li style="text-align: justify;color:#6d9eeb;"> We released 420 minutes of speech data for performing Speech-to-Text,
                 Text-to-Speech, Gender Identification and Speaker Identification.</li>
-              <li style="text-align: justify;">We released Badaga-English parallel text corpus with 2100 number of
-                sentences for translation.</li> 
-              <li style="text-align: justify;"> The foundation models are fine tuned to setup the baseline for all the
+              <li style="text-align: justify;color:#6d9eeb;">We released Badaga-English parallel text corpus with 2100 number of
+                sentences for translation.</li>
+              <li style="text-align: justify;color:#6d9eeb;"> The foundation models are fine tuned to setup the baseline for all the
                 tasks.</li>
             </ul>
             <a style="text-align: center;"
@@ -142,20 +172,20 @@
         </div>
       </div>
     </section>
-    <section>
+    <section style="background-color:#f9f9f9">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>
+            <h2 style="color:#6d9eeb">
               Motivation
             </h2>
-            <p style="text-align: justify;">
+            <p style="text-align: justify;color:#6d9eeb">
                   when deep learning models replaced
                   conventional methods the successive results were obtained with the strength
                   of non-linearity learning capability through various algorithms like DNN, DAE, CNN, RNN and LSTM.
                   Since these algorithms
                   are data-hungry models, only very few resource-rich languages such as English,
-                  Ancient Greek, Latin, and Egyptian Language have a larger corpus to accommodate the deep learning algorithms. 
+                  Ancient Greek, Latin, and Egyptian Language have a larger corpus to accommodate the deep learning algorithms.
                   This is a big constraint for resource-poor
                   languages in the speech domain where the data is limited.
                   Deploying deep learning-based applications for low resource languages often
@@ -177,7 +207,7 @@
       </div>
     </section>
 
-        <section class="gray">
+        <section style="background-color: #6d9eeb;">
           <div class="container">
             <div class="row">
               <div class = "col-md-12">
@@ -187,20 +217,21 @@
                 <p style="text-align: justify;">
                   Since the Badaga language is not officially written on any native script,
                   we have manually created 2100 number of Badaga transcript written in english
-                  slong with its corresponding translation in English. 12 native speaker spoke these
+                  slang with its corresponding translation in English. 12 native speaker spoke these
                   text sets and recoded. Both annotated and unannotated corpus released as wave files
                   with sampling rate of 22050 Hz and PCM 16 bit rate.
 
                   The annotated corpus constructed carefully to include the word variations
                   which includes, food items, utensils, proverbs, insects, flowers, animals, colours,
                   numbers, days, weeks, months, fruits, common places, action words and vehicle
-                  types. The unannotated corpus has been collated by taking data from the Youtube. 
+                  types. The unannotated corpus has been collated by taking data from the Youtube.
                   The genre includes musical songs, short films and talk shows
                 </p>
               </div>
-              <div class="col-md-12">
+
                 <h2></h2>
                 <table class="table performanceTable">
+                  <div class="feature-item">
                   <thead></thead>
                   <tr>
                     <th rowspan="2"></th>
@@ -265,9 +296,10 @@
                   <p style="text-align: center;">
                     Table 1. CoRe-PooL Statistics
                   </p>
+                  </div>
                 </table>
-              </div>
-              <div class="col-md-6 col-md-offset-3" >
+
+
                 <h2></h2>
                 <table  class="table performanceTable">
 
@@ -285,13 +317,13 @@
                     <td style="text-align: center;">Unannotated</td>
                     <td style="text-align: center;">968</td>
                   </tr>
-                  
+
                   <p style="text-align: center;">
                     Table 2. Core-pool Variation
                   </p>
                 </table>
               </div>
-            </div>
+
             <hr />
           </div>
         </section>
@@ -302,53 +334,53 @@
       </div>
     </section>
 
-    <section>
+    <section style="background-color:#fff">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-2">
             <div class="col-md-2 item-wrap col-sm-3">
               <div class="feature-item">
-                <img class="img-circle" src="/projects/Core-pool/img/gender.png" />
-                <h4 class="compact-title">Gender Identification</h4>
+                <img style="color:#76ad5f" class="img-circle" src="/projects/Core-pool/img/gender.png" />
+                <h4 style="color:#6d9eeb" class="compact-title">Gender Identification</h4>
               </div>
             </div>
             <div class="col-md-2 item-wrap col-sm-3">
               <div class="feature-item">
                 <img class="img-circle" src="/projects/Core-pool/img/speech to text.png" />
-                <h4 class="compact-title">Speech to Text</h4>
+                <h4 style="color:#6d9eeb" class="compact-title">Speech to Text</h4>
               </div>
             </div>
             <div class="col-md-2 item-wrap col-sm-3">
               <div class="feature-item">
-                <img class="img-circle" src="/projects/Core-pool/img/text to speech.png"/>
-                <h4 class="compact-title">Text to Speech</h4>
+                <img  class="img-circle" src="/projects/Core-pool/img/text to speech.png"/>
+                <h4 style="color:#6d9eeb" class="compact-title">Text to Speech</h4>
               </div>
             </div>
             <div class="col-md-2 item-wrap col-sm-3">
               <div class="feature-item">
                 <img class="img-circle" src="/projects/Core-pool/img/chat.png"/>
-                <h4 class="compact-title">Speaker Identification</h4>
+                <h4  style="color:#6d9eeb" class="compact-title">Speaker Identification</h4>
               </div>
             </div>
             <div class="col-md-2 item-wrap col-sm-3">
               <div class="feature-item">
                 <img class="img-circle" src="/projects/Core-pool/img/translator.png" />
-                <h4 class="compact-title">Translator</h4>
+                <h4 style="color:#6d9eeb" class="compact-title">Translator</h4>
               </div>
             </div>
           </div>
           </div>
 
           <div class="col-md-12">
-            <h3>
+            <h3 style="color:#6d9eeb">
               To learn more, check out
-              <a
+              <a style="color:#bdb1b1"
                 href="https://github.com/rbg-research/CoRePooL"
               >
                 our GitHub
               </a>
               and read
-              <a href="https://github.com/rbg-research/CoRePooL/tree/main/benchmarks/badaga">our Benchmark</a>
+              <a style="color:#bdb1b1" href="https://github.com/rbg-research/CoRePooL/tree/main/benchmarks/badaga">our Benchmark</a>
               where you can find the fine tuned models applied for the different tasks and the observed results.
             </h3>
           </div>
@@ -359,35 +391,61 @@
 
 
 
-      <section id="contact" class="gray">
-        <div class="container">
-          <div class="row">
-            <div>
+       <div style="background-color:#6d9eeb;" id="contact" class="teamc">
+      <div class="container">
+        <div class="row">
+
             <style>
-                h { text-indent: 25px; }
-            </style>
-              <div class="section-heading"><h><h1>Contacts</h1></h></div>
-            </div>
-          </div>
-  
-          <div class="row">
-            <div class="col-md-12">
-              <a href="/"><img align="left" src="/img/RBG logo/50x50.png" /></a>
-              <h4>
-                <span style="padding-left: 20px;">
-                  If you have queries about our work, contact us at:
-                </span>
-              </h4>
-              <p>
-                <a href="mailto: research@rbg.ai">
-                  <span style="padding-left: 20px;">research@rbg.ai</span>
-                </a>
-              </p>
-            </div>
-          </div>
-          <hr />
+              h { text-indent: 25px; }
+          </style>
+           <div style="text-align:center" class="section-heading"><h1>Contacts</h1></div>
+
         </div>
-      </section>
+
+          <div class="bottom">
+          <div class="row">
+          <div class="col-md-6">
+               <div class="feature1-item">
+            <a href="index.html"><img  src="/img/RBG logo/rbg1.png" /></a>
+               </div>
+            <h4>
+            <span>
+              RBG.AI,<br>SREC Incubation Center,<br> Sri Ramakrishna Engineering College,Coimbatore<br> Tamil Nadu 641 022,India
+              </span>
+             </h4>
+            <h4>
+              <span>
+                If you have queries about our work, contact us at
+              </span>
+            </h4>
+            <p>
+              <a href="mailto: research@rbg.ai">
+                <span>research@rbg.ai</span>
+              </a>
+            </p>
+          </div>
+            <div class="col-md-6">
+                <div class="feature2-item">
+               <ul1 class="top">
+                 <li1><a class="linkedin"  href="https://in.linkedin.com/company/rbg-ai"></a></li1>
+                 <li1><a class="youtube"  href="https://www.youtube.com/c/RBGAI"></a></li1>
+                 <li1><a class="facebook"  href="https://m.facebook.com/people/RBGAI/100070859903620/"></a></li1>
+                 <li1><a class="twitter"  href="https://mobile.twitter.com/rbg_ai"></a></li1>
+                     <li1><a class="github"  href="https://github.com/rbg-research"></a></li1>
+       </ul1>
+                    </div>
+              </div>
+
+            </div>
+        <br>
+        <br>
+
+        <hr />
+        <p style="text-align:center">© 2022 RBG.AI. All rights reserved.</p>
+            </div>
+
+      </div>
+  </div>
 
     <script src="/lib/jquery/jquery.min.js"></script>
     <script src="/lib/bootstrap/js/bootstrap.min.js"></script>

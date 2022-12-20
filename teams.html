@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+     <!--Diwakar 2022-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      RBG.AI
+    </title>
+    <meta
+      name="description"
+      content="Classifying Deforestation Drivers in Satellite Imagery."
+    />
+    <meta
+      property="og:image"
+      content="https://stanfordmlgroup.github.io/projects/forestnet/img/fig1.png"
+    />
+    <meta
+      name="twitter:image"
+      content="https://stanfordmlgroup.github.io/projects/forestnet/img/fig1.png"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="image_src" type="image/jpeg" href="/img/RBG logo/rbg.png" />
+    <link rel="shortcut icon" href="/img/RBG logo/rbg.png" type="image/x-icon" />
+    <link rel="icon" href="/img/RBG logo/rbg.png" type="image/x-icon" />
+    <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,600"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="/lib/simple-line-icons/css/simple-line-icons.css"
+    />
+    <link href="/css copy/theme.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/projects/chexnext/css/chexnext.css"
+    />
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="/js/analytics.js"></script>
+  </head>
+<body>
+
+ <nav style="background-color:#e57171" class="navbar navbar-default navbar-fixed-top" id="mainNav">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display-->
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            Menu
+            <i class="fa fa-bars"></i>
+          </button>
+
+
+
+          <a class="navbar-brand page-scroll" href="index.html">RBG AI Research</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="page-scroll" href="index.html">Home</a>
+            </li>
+<!--            <li>-->
+<!--              <a class="page-scroll" href="ml.html">MLloOps-->
+<!--              </a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a class="page-scroll" href="#Contributors">Contributors</a>-->
+<!--            </li>-->
+           <li><a class="page-scroll" href="research.html">research</a></li>
+<!--           <li><a class="page-scroll" href="#contact">Contact</a></li>-->
+           <li><a class="page-scroll" href="teams.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section style="background-color:#e57171" id="header">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <h1 id="page-title">RBG Artificial Intelligence Research</h1>
+            <h2></h2>
+            <h2>
+              Focused to span AI solutions across multiple domains to Structure
+              the Unstructured data
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+ <section style="background-color:#f9f9f9;" id="Contributors">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="section-heading">
+
+
+              <div class="row">
+                   <h3 style="color:#e57171">Advisory Board</h3>
+          <div class="col-md-12 col-md-offset-4">
+            <div class="col-md-4 item-wrap col-sm-4">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/Gohil.png" />
+                <h4 style="color:#e57171" class="compact-title">Mr.Gohil HK</h4>
+                <p style="color:#e57171" class="compact-subtitle">Business</p>
+              </div>
+            </div>
+            <div class="col-md-4  col-sm-4">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/Zala.jpg" />
+                <h4 style="color:#e57171"  class="compact-title">Mr.Jatin Zala</h4>
+                <p style="color:#e57171" class="compact-subtitle">Sales</p>
+              </div>
+            </div>
+            <div class="col-md-4 item-wrap col-sm-4">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/DrSoman.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Dr.Soman KP</h4>
+                <p style="color:#e57171" class="compact-subtitle">Technology</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+              <h3 style="color:#e57171">Research Executives</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-md-offset-4">
+            <div class="col-md-4 item-wrap col-sm-4">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/Anandhkumar.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Dr.Anandhkumar</h4>
+                <p style="color:#e57171" class="compact-subtitle">Faculty at NITK</p>
+              </div>
+            </div>
+            <div class="col-md-4  col-sm-4">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/Barathi-Ganesh.jpg" />
+                <h4 style="color:#e57171"  class="compact-title">Barathi Ganesh</h4>
+                <p style="color:#e57171" class="compact-subtitle">Research head at RBG.AI</p>
+              </div>
+            </div>
+            <div class="col-md-4 item-wrap col-sm-4">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/DrSowmya.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Dr.Sowmya V</h4>
+                <p style="color:#e57171" class="compact-subtitle">Faculty at Amrita</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <br>
+
+         </section>
+
+     <section style="background-color:#fff;padding:60px;">
+
+        <div  class="row">
+          <div style="color:#fff" class="col-md-12">
+            <div class="section-heading text-center">
+              <h3 style="color:#e57171">Research Advisors</h3>
+            </div>
+            <div class="col-md-3 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/Jothish.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Dr.Jyothish</h4>
+                <p style="color:#e57171" class="compact-subtitle">Faculty at Amrita</p>
+              </div>
+            </div>
+            <div class="col-md-3item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/Kamal.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Kamal N S</h4>
+                <p style="color:#e57171" class="compact-subtitle">AI Practitioner at RBG.AI</p>
+              </div>
+            </div>
+            <div class="col-md-3 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/nimal.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Dr.Nimal Madhu</h4>
+                <p style="color:#e57171" class="compact-subtitle">Faculty at Amrita</p>
+              </div>
+            </div>
+            <div class="col-md-3 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/premjith.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Dr.Premjith B</h4>
+                <p style="color:#e57171" class="compact-subtitle">Faculty at Amrita</p>
+              </div>
+            </div>
+            </div>
+          </div>
+           <div class="row">
+          <div class="col-md-12">
+
+            <div class="col-md-3 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/Sachin.jpg" />
+                <h4 style="color:#e57171"  class="compact-title">Dr.Sachin Kumar</h4>
+                <p style="color:#e57171" class="compact-subtitle">Faculty at Amrita</p>
+              </div>
+            </div>
+            <div class="col-md-3item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/Sajith.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Sajith Variyar</h4>
+                <p style="color:#e57171" class="compact-subtitle">Faculty at Amrita</p>
+              </div>
+            </div>
+            <div class="col-md-3 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/shyam.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Shyam R</h4>
+                <p style="color:#e57171" class="compact-subtitle">Solution Head at RBG.AI</p>
+              </div>
+            </div>
+
+            </div>
+          </div>
+<!--         <div class="row">-->
+<!--          <div class="col-md-12">-->
+<!--            <div class="col-md-3 item-wrap col-sm-3">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/Sachin.jpg" />-->
+<!--                <h4 class="compact-title">Dr.Sachin Kumar</h4>-->
+<!--                <p class="compact-subtitle">Faculty at Amrita</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-3 ">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/Sajith.jpg" />-->
+<!--                <h4 class="compact-title">Sajith Variyar</h4>-->
+<!--                <p class="compact-subtitle">Faculty at Amrita</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-3 ">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/shyam.jpg" />-->
+<!--                <h4 class="compact-title">Shyam R</h4>-->
+<!--                <p class="compact-subtitle">Solution head at RBG.AI</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-3 ">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/DrSowmya.jpg" />-->
+<!--                <h4 class="compact-title">Dr.Sowmya V</h4>-->
+<!--                <p class="compact-subtitle">Faculty at Amrita</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!-- <section style="background-color:#fff" >-->
+<!--      <div class="container">-->
+<!--        <div class="row">-->
+<!--          <div class="col-md-10 col-md-offset-1">-->
+<!--            <div class="section-heading text-center">-->
+<!--              <div id="members"></div>-->
+<!--              <p style="color:#cd5c5c">Research Members</p>-->
+<!--            </div>-->
+<!--            <div class="col-md-2 item-wrap col-sm-3">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/karthik.jpg" />-->
+<!--                <h4 style="color:#cd5c5c" class="compact-title">Karthik T R</h4>-->
+<!--                <p style="color:#cd5c5c" class="compact-subtitle">AI practitioner at RBG.AI</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--&lt;!&ndash;            <div class="col-md-2 item-wrap col-sm-3">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img class="img-circle" src="/img/Images/Placeholder.jpg" />&ndash;&gt;-->
+<!--&lt;!&ndash;                <h4 class="compact-title">Bichu George</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="compact-subtitle">Researcher at Amrita</p>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="col-md-2 item-wrap col-sm-3">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img class="img-circle" src="/img/Images/Brahmi.jpg" />&ndash;&gt;-->
+<!--&lt;!&ndash;                <h4 class="compact-title">Brahmi Rathod</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="compact-subtitle">AI Intern at RBG.AI</p>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--            <div class="col-md-2 item-wrap col-sm-3">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/Dev.jpg" />-->
+<!--                <h4 style="color:#cd5c5c" class="compact-title">Dev Khare</h4>-->
+<!--                <p style="color:#cd5c5c" class="compact-subtitle">AI practitioner at RBG.AI</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-2 item-wrap col-sm-3">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/Jairam.jpg" />-->
+<!--                <h4 style="color:#cd5c5c"  class="compact-title">Jairam R</h4>-->
+<!--                <p style="color:#cd5c5c" class="compact-subtitle">AI practitioner at RBG.AI</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--&lt;!&ndash;            <div class="col-md-2 item-wrap col-sm-3">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img class="img-circle" src="/img/Images/Madhumitha.jpg" />&ndash;&gt;-->
+<!--&lt;!&ndash;                <h4 class="compact-title">Madhumitha M</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="compact-subtitle">AI Intern at RBG.AI</p>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="col-md-2 item-wrap col-sm-3">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img class="img-circle" src="/img/Images/Placeholder.jpg" />&ndash;&gt;-->
+<!--&lt;!&ndash;                <h4 class="compact-title">Parvathi pradeep</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="compact-subtitle">Researcher at Amrita</p>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="col-md-2 item-wrap col-sm-3">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="feature-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                <img class="img-circle" src="/img/Images/Prashanth.jpg" />&ndash;&gt;-->
+<!--&lt;!&ndash;                <h4 class="compact-title">Prashanth R</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                <p class="compact-subtitle">Researcher at Amrita</p>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--            <div class="col-md-2 item-wrap col-sm-3">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/pranav.png" />-->
+<!--                <h4 style="color:#cd5c5c" class="compact-title">Pranavan B</h4>-->
+<!--                <p style="color:#cd5c5c" class="compact-subtitle">AI practitioner at RBG.AI</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-2 item-wrap col-sm-3">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/Vishwa.jpg" />-->
+<!--                <h4 style="color:#cd5c5c" class="compact-title">Vishwa Gohil</h4>-->
+<!--                <p style="color:#cd5c5c" class="compact-subtitle">AI practitioner at RBG.AI</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-2 item-wrap col-sm-3">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/rahul.jpg" />-->
+<!--                <h4 style="color:#cd5c5c" class="compact-title">Rahul Gandhi</h4>-->
+<!--                <p style="color:#cd5c5c" class="compact-subtitle">AI practitioner at RBG.AI</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+     </section>
+
+ <section style="background-color:#fff" >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="section-heading text-center">
+              <div id="resmem"></div>
+              <h3 style="color:#e57171">Research Members</h3>
+            </div>
+             <div class="col-md-2 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/Dev.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Dev Khare</h4>
+                <p style="color:#e57171" class="compact-subtitle">AI Practitioner at RBG.AI</p>
+              </div>
+            </div>
+             <div class="col-md-2 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/diwa.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Diwakar M</h4>
+                <p style="color:#e57171" class="compact-subtitle">AI Tester at RBG.AI</p>
+              </div>
+            </div>
+            <div class="col-md-2 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/Jairam.jpg" />
+                <h4 style="color:#e57171"  class="compact-title">Jairam R</h4>
+                <p style="color:#e57171" class="compact-subtitle">AI Practitioner at RBG.AI</p>
+              </div>
+            </div>
+            <div class="col-md-2 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/karthik.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Karthik T R</h4>
+                <p style="color:#e57171" class="compact-subtitle">AI Practitioner at RBG.AI</p>
+              </div>
+            </div>
+             <div class="col-md-2 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/keshav.jpeg" />
+                <h4 style="color:#e57171" class="compact-title">Keshav</h4>
+                <p style="color:#e57171" class="compact-subtitle">Senior AI practitioner at RBG.AI</p>
+              </div>
+            </div>
+            <div class="col-md-2 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/mano.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Manogaran H</h4>
+                <p style="color:#e57171" class="compact-subtitle">AI Tester at RBG.AI</p>
+              </div>
+            </div>
+<!--            <div class="col-md-2 item-wrap col-sm-3">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/Placeholder.jpg" />-->
+<!--                <h4 class="compact-title">Bichu George</h4>-->
+<!--                <p class="compact-subtitle">Researcher at Amrita</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-2 item-wrap col-sm-3">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/Brahmi.jpg" />-->
+<!--                <h4 class="compact-title">Brahmi Rathod</h4>-->
+<!--                <p class="compact-subtitle">AI Intern at RBG.AI</p>-->
+<!--              </div>-->
+<!--            </div>-->
+
+
+<!--            <div class="col-md-2 item-wrap col-sm-3">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/Madhumitha.jpg" />-->
+<!--                <h4 class="compact-title">Madhumitha M</h4>-->
+<!--                <p class="compact-subtitle">AI Intern at RBG.AI</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-2 item-wrap col-sm-3">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/Placeholder.jpg" />-->
+<!--                <h4 class="compact-title">Parvathi pradeep</h4>-->
+<!--                <p class="compact-subtitle">Researcher at Amrita</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-2 item-wrap col-sm-3">-->
+<!--              <div class="feature-item">-->
+<!--                <img class="img-circle" src="/img/Images/Prashanth.jpg" />-->
+<!--                <h4 class="compact-title">Prashanth R</h4>-->
+<!--                <p class="compact-subtitle">Researcher at Amrita</p>-->
+<!--              </div>-->
+<!--            </div>-->
+            <div class="col-md-2 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/pranav.png" />
+                <h4 style="color:#e57171" class="compact-title">Pranavan B</h4>
+                <p style="color:#e57171" class="compact-subtitle">AI Practitioner at RBG.AI</p>
+              </div>
+            </div>
+            <div class="col-md-2 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/P2.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Prashanth</h4>
+                <p style="color:#e57171" class="compact-subtitle">AI Practitioner at RBG.AI</p>
+              </div>
+            </div>
+            <div class="col-md-2 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/rahul.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Rahul Gandhi</h4>
+                <p style="color:#e57171" class="compact-subtitle">AI Practitioner at RBG.AI</p>
+              </div>
+            </div>
+            <div class="col-md-2 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/sanjay.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Sanjay M</h4>
+                <p style="color:#e57171" class="compact-subtitle">AI Tester at RBG.AI</p>
+              </div>
+            </div>
+            <div class="col-md-2 item-wrap col-sm-3">
+              <div class="feature-item">
+                <img class="img-circle" src="/img/Images/Vishwa.jpg" />
+                <h4 style="color:#e57171" class="compact-title">Vishwa Gohil</h4>
+                <p style="color:#e57171" class="compact-subtitle">AI Practitioner at RBG.AI</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+       <div style="background-color: #e57171;" id="contact" class="teamc">
+      <div class="container">
+        <div class="row">
+
+            <style>
+              h { text-indent: 25px; }
+          </style>
+           <div style="text-align:center" class="section-heading"><h1>Contacts</h1></div>
+
+        </div>
+
+          <div class="bottom">
+          <div class="row">
+          <div class="col-md-6">
+               <div class="feature1-item">
+            <a href="index.html"><img  src="/img/RBG logo/rbg1.png" /></a>
+               </div>
+            <h4>
+            <span>
+              RBG.AI,<br>SREC Incubation Center,<br> Sri Ramakrishna Engineering College,Coimbatore<br> Tamil Nadu 641 022,India
+              </span>
+             </h4>
+            <h4>
+              <span>
+                If you have queries about our work, contact us at
+              </span>
+            </h4>
+            <p>
+              <a href="mailto: research@rbg.ai">
+                <span>research@rbg.ai</span>
+              </a>
+            </p>
+          </div>
+            <div class="col-md-6">
+                <div class="feature2-item">
+               <ul1 class="top">
+                 <li1><a class="linkedin"  href="https://in.linkedin.com/company/rbg-ai"></a></li1>
+                 <li1><a class="youtube"  href="https://www.youtube.com/c/RBGAI"></a></li1>
+                 <li1><a class="facebook"  href="https://m.facebook.com/people/RBGAI/100070859903620/"></a></li1>
+                 <li1><a class="twitter"  href="https://mobile.twitter.com/rbg_ai"></a></li1>
+                     <li1><a class="github"  href="https://github.com/rbg-research"></a></li1>
+       </ul1>
+                    </div>
+              </div>
+
+            </div>
+        <br>
+        <br>
+
+        <hr />
+        <p style="text-align:center">© 2022 RBG.AI. All rights reserved.</p>
+            </div>
+
+      </div>
+  </div>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/js/theme.js"></script>
+
+</body>
+
+</html>

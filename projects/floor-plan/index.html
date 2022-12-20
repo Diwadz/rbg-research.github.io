@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <title>
-      Floor-plan-Detection
+      RBG.AI
     </title>
     <meta
       name="description"
@@ -23,9 +23,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <link rel="image_src" type="image/jpeg" href="/img/RBG logo/50x50.png" />
-    <link rel="shortcut icon" href="/img/RBG logo/50x50.png" type="image/x-icon" />
-    <link rel="icon" href="/img/RBG logo/50x50.png" type="image/x-icon" />
+    <link rel="image_src" type="image/jpeg" href="/img/RBG logo/rbg.png" />
+    <link rel="shortcut icon" href="/img/RBG logo/rbg.png" type="image/x-icon" />
+    <link rel="icon" href="/img/RBG logo/rbg.png" type="image/x-icon" />
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:400,600"
@@ -50,17 +51,46 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="/js/analytics.js"></script>
   </head>
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
+  <body style="background-color: #6d9eeb;">
+    <nav style="background-color:#6d9eeb" class="navbar navbar-default navbar-fixed-top" id="mainNav">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display-->
         <div class="navbar-header">
-          <a class="navbar-brand page-scroll" href="/">RBG AI Research</a>
+          <button
+            class="navbar-toggle collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            Menu
+            <i class="fa fa-bars"></i>
+          </button>
+
+
+
+          <a class="navbar-brand page-scroll" href="/index.html">RBG AI Research</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a class="page-scroll" href="/index.html">Home</a>
+            </li>
+<!--            <li>-->
+<!--              <a class="page-scroll" href="#Contributors">Contributors</a>-->
+<!--            </li>-->
+           <li><a class="page-scroll" href="/research.html">research</a></li>
+<!--           <li><a class="page-scroll" href="#contact">Contact</a></li>-->
+             <li>
+              <a class="page-scroll" href="/teams.html" target="_blank">About us
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <section id="header">
+    <section style="background-color: #6d9eeb;" id="header">
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
@@ -74,15 +104,15 @@
         </div>
       </div>
     </section>
-    <section>
+    <section style="background-color:#f9f9f9" >
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>
+            <h2 style="color:#6d9eeb">
               We developed a deep learning model for Building Information Modeling (BIM) software using
               scalable vector formats to enable flexible designing of floor plans in the industry. 
             </h2>
-            <p style="text-align: justify;">
+            <p style="text-align: justify;color:#6d9eeb;">
               Floor plans in the architectural domain can come from many
               sources that may or may not be in scalable vector format. 
               The conversion of floor plan images to fully annotated vector images is a process that can now be realized by computer vision.
@@ -101,17 +131,17 @@
         </div>
       </div>
     </section>
-    <section class="gray">
+    <section style="background-color:#ffffff">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <img src="/projects/floor-plan/img/Plan.jpg" />
+            <img class="floor" src="/projects/floor-plan/img/floor4.jpg" />
           </div>
           <div class="col-md-12">
-            <h2>
+            <h2 style="color:#6d9eeb;">
               Floor-Plan-Detection dataset
             </h2>
-            <p style="text-align: justify;">
+            <p style="text-align: justify;color:#6d9eeb;">
               Segmentation of floor plans needs to be precise for an end-to-end application.
               After observing the segmentation results of the empirical model for floor plans
               of various sizes, we concluded that there is a need for the CubiCasa approach to
@@ -131,21 +161,21 @@
         </div>
       </div>
     </section>
-    <section>
+    <section style="background-color:#f9f9f9">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2>
+            <h2 style="color:#6d9eeb;">
               Our Floor-Plan-Detection uses multi-component module that can perform image enhancement and object detection.
             </h2>
-            <p style="text-align: justify;">
+            <p style="text-align: justify;color:#6d9eeb;">
               Since the floor plan detection is an end to end conversation, the process need not be real-time. The main objective
               of the floor plan annotation task is to enhance the accuracy without constraints on time and computing power. To handle this,  a
               novel multi-component module has been experimented  that can perform image enhancement followed by
               the object detection. From the CubiCasa5k corpus we select ninety low resolution floor plans and observe the
               increase in performance after super-resolution.
             </p>
-            <p style="text-align: justify;">
+            <p style="text-align: justify;color:#6d9eeb;">
               This work performs super-resolution for image enhancement before detecting
               floor plan icons and room types; stacking super-resolution frameworks with the
               CubiCasa architecture results in a multi-component module that does just this.
@@ -162,7 +192,7 @@
       </div>
     </section>
 
-        <section class="gray">
+        <section>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -433,11 +463,11 @@
         </div>
       </div>
     </section>
-    <section>
+   <section style="background-color:#fff;">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-          <iframe width="560" height="315" 
+          <iframe class="you"
           src="https://www.youtube.com/embed/ZGwFl6K_EyU"
            title="YouTube video player" frameborder="0" allow="accelerometer;
             autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -455,11 +485,11 @@
               }
             </style>
             <span class="example">
-            <h3>
+            <h3 style="color:#6d9eeb;>
               To learn more, check out 
               <a href="https://github.com/rbg-research/Floor-Plan-Detection">our GitHub</a>
               and read
-              <a href="https://arxiv.org/abs/2112.09844v1">our publication</a>
+              <a style="color:#979494;" href="https://arxiv.org/abs/2112.09844v1">our publication</a>
               presented at 3rd International Conference on Machine Learning, Image Processing, Network Security and Data Sciences
             </h3>
             </span>
@@ -469,35 +499,61 @@
     </section>
 
 
-      <section id="contact" class="gray">
-        <div class="container">
-          <div class="row">
-            <div>
-              <style>
-                h { text-indent: 25px; }
-            </style>
-              <div class="section-heading"><h><h1>Contacts</h1></h></div>
-            </div>
-          </div>
-  
-          <div class="row">
-            <div class="col-md-12">
-              <a href="/"><img align="left" src="/img/RBG logo/50x50.png" /></a>
-              <h4>
-                <span style="padding-left: 20px;">
-                  If you have queries about our work, contact us at:
-                </span>
-              </h4>
-              <p>
-                <a href="mailto: research@rbg.ai">
-                  <span style="padding-left: 20px;">research@rbg.ai</span>
-                </a>
-              </p>
-            </div>
-          </div>
-          <hr />
+     <div style="background-color:#6d9eeb;" id="contact" class="teamc">
+      <div class="container">
+        <div class="row">
+
+            <style>
+              h { text-indent: 25px; }
+          </style>
+           <div style="text-align:center" class="section-heading"><h1>Contacts</h1></div>
+
         </div>
-      </section>
+
+          <div class="bottom">
+          <div class="row">
+          <div class="col-md-6">
+               <div class="feature1-item">
+            <a href="index.html"><img  src="/img/RBG logo/rbg1.png" /></a>
+               </div>
+            <h4>
+            <span>
+              RBG.AI,<br>SREC Incubation Center,<br> Sri Ramakrishna Engineering College,Coimbatore<br> Tamil Nadu 641 022,India
+              </span>
+             </h4>
+            <h4>
+              <span>
+                If you have queries about our work, contact us at
+              </span>
+            </h4>
+            <p>
+              <a href="mailto: research@rbg.ai">
+                <span>research@rbg.ai</span>
+              </a>
+            </p>
+          </div>
+            <div class="col-md-6">
+                <div class="feature2-item">
+               <ul1 class="top">
+                 <li1><a class="linkedin"  href="https://in.linkedin.com/company/rbg-ai"></a></li1>
+                 <li1><a class="youtube"  href="https://www.youtube.com/c/RBGAI"></a></li1>
+                 <li1><a class="facebook"  href="https://m.facebook.com/people/RBGAI/100070859903620/"></a></li1>
+                 <li1><a class="twitter"  href="https://mobile.twitter.com/rbg_ai"></a></li1>
+                     <li1><a class="github"  href="https://github.com/rbg-research"></a></li1>
+       </ul1>
+                    </div>
+              </div>
+
+            </div>
+        <br>
+        <br>
+
+        <hr />
+        <p style="text-align:center">© 2022 RBG.AI. All rights reserved.</p>
+            </div>
+
+      </div>
+  </div>
 
     <script src="/lib/jquery/jquery.min.js"></script>
     <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
