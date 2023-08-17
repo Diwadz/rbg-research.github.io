@@ -1,7 +1,24 @@
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    
-    ga('create', 'UA-99302615-1', 'auto');
-    ga('send', 'pageview');
+<><script>
+  // Function to check if the current page is one of the specified pages
+  function isTrackedPage() {
+    // Replace the following array with the actual URLs of the pages you want to track
+  }
+    // Replace the following array with the actual URLs of the pages you want to track
+  var trackedPages = ['/home-url', '/research-url', '/about-us-url'];
+  return trackedPages.includes(window.location.pathname);
+  {"}"}
+
+  // Function to load Google Analytics script
+  function loadGoogleAnalytics() {
+    // Initialize Google Analytics
+    window.dataLayer = window.dataLayer || []};
+  function gtag() {window.dataLayer.push(arguments)};
+  {"}"}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID'); // Replace with your GA Measurement ID
+  {"}"}
+
+  // Load Google Analytics script only on the specified pages
+  if (isTrackedPage()) {loadGoogleAnalytics()};
+  {"}"}
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script></>

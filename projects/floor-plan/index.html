@@ -49,7 +49,7 @@
     />
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <script src="/js/analytics.js"></script>
+    <!-- <script src="/js/analytics.js"></script> -->
   </head>
   <body style="background-color: #6d9eeb;">
     <nav style="background-color:#6d9eeb" class="navbar navbar-default navbar-fixed-top" id="mainNav">
@@ -83,7 +83,7 @@
            <li><a class="page-scroll" href="/research.html">research</a></li>
 <!--           <li><a class="page-scroll" href="#contact">Contact</a></li>-->
              <li>
-              <a class="page-scroll" href="/teams.html" target="_blank">About us
+              <a class="page-scroll" href="/teams.html">About us
               </a>
             </li>
           </ul>
@@ -114,12 +114,12 @@
             </h2>
             <p style="text-align: justify;color:#6d9eeb;">
               Floor plans in the architectural domain can come from many
-              sources that may or may not be in scalable vector format. 
+              sources that may or may not be in scalable vector format.
               The conversion of floor plan images to fully annotated vector images is a process that can now be realized by computer vision.
-              Novel datasets in this field have been used to train Convolutional Neural Network (CNN)
-              architectures for object detection. Image enhancement through SuperResolution (SR) is also an established CNN based network in computer
-              vision that is used for converting low resolution images to high resolution ones. 
-              This work focuses on creating a multi-component module that stacks a SR model on a floor plan object detection model.
+              Novel datasets in this field have been used to train Convolutional Neural Networks (CNN)
+              architectures for object detection. Image enhancement through SuperResolution (SR) is also an established CNN-based network in computer
+              vision that is used for converting low-resolution images to high-resolution ones.
+              This work focuses on creating a multi-component module that stacks an SR model on a floor plan object detection model.
             </p>
             <a
               class="btn btn-lg btn-default"
@@ -142,14 +142,14 @@
               Floor-Plan-Detection dataset
             </h2>
             <p style="text-align: justify;color:#6d9eeb;">
-              Segmentation of floor plans needs to be precise for an end-to-end application.
+             Segmentation of floor plans needs to be precise for an end-to-end application.
               After observing the segmentation results of the empirical model for floor plans
               of various sizes, we concluded that there is a need for the CubiCasa approach to
               incorporate image enhancement as an essential preliminary step.
-              CubiCasa5K is a large-scale floorplan image dataset containing 5000 samples annotated into over 80 floorplan object categories. 
-              The dataset annotations are performed in a dense and versatile manner by using polygons for separating the different objects. 
-              Our floorplan module was tested on 100 images from the CubiCasa5k dataset that had sizes less that 800x800. 
-              This was done to test the influence of super-resolution on low resolution images. 
+              CubiCasa5K is a large-scale floorplan image dataset containing 5000 samples annotated into over 80 floorplan object categories.
+              The dataset annotations are performed in a dense and versatile manner by using polygons for separating the different objects.
+              Our floorplan module was tested on 100 images from the CubiCasa5k dataset that had sizes less than 800x800.
+              This was done to test the influence of super-resolution on low-resolution images.
             </p>
             <a
               class="btn btn-lg btn-default"
@@ -169,10 +169,10 @@
               Our Floor-Plan-Detection uses multi-component module that can perform image enhancement and object detection.
             </h2>
             <p style="text-align: justify;color:#6d9eeb;">
-              Since the floor plan detection is an end to end conversation, the process need not be real-time. The main objective
+             Since floor plan detection is an end-to-end conversation, the process need not be real-time. The main objective
               of the floor plan annotation task is to enhance the accuracy without constraints on time and computing power. To handle this,  a
-              novel multi-component module has been experimented  that can perform image enhancement followed by
-              the object detection. From the CubiCasa5k corpus we select ninety low resolution floor plans and observe the
+              novel multi-component module has been experimented with that can perform image enhancement followed by
+              object detection. From the CubiCasa5k corpus, we select ninety low-resolution floor plans and observe the
               increase in performance after super-resolution.
             </p>
             <p style="text-align: justify;color:#6d9eeb;">
@@ -201,11 +201,11 @@
                 </h2>
                 <p style="text-align: justify;">
                   The multi-component module performed room detection with higher accuracy
-                  than that of when using CubiCasa5k model alone. The best
+                  than that when using the CubiCasa5k model alone. The best
                   improvement in accuracy for the dataset chosen is 39.47%; EDSR is the SR
                   model used in this case.  EDSR also showed the best result from all the superresolution methods with a 12.17% improvement on average.
                   This stacked Super-Resolution method has to be used during training to alter the
-                  dimensions of low resolution images. This could enhance the overall performance
+                  dimensions of low-resolution images. This could enhance the overall performance
                   of the network and push it to a wider range of use cases.
                 </p>
               </div>
@@ -485,12 +485,12 @@
               }
             </style>
             <span class="example">
-            <h3 style="color:#6d9eeb;>
-              To learn more, check out 
-              <a href="https://github.com/rbg-research/Floor-Plan-Detection">our GitHub</a>
+            <h3 style="color:#6d9eeb;">
+              To learn more, check out
+              <a style="color:#979494;" href="https://github.com/rbg-research/Floor-Plan-Detection">our GitHub</a>
               and read
               <a style="color:#979494;" href="https://arxiv.org/abs/2112.09844v1">our publication</a>
-              presented at 3rd International Conference on Machine Learning, Image Processing, Network Security and Data Sciences
+             presented at the 3rd International Conference on Machine Learning, Image Processing, Network Security and Data Sciences
             </h3>
             </span>
           </div>
@@ -518,7 +518,7 @@
                </div>
             <h4>
             <span>
-              RBG.AI,<br>SREC Incubation Center,<br> Sri Ramakrishna Engineering College,Coimbatore<br> Tamil Nadu 641 022,India
+            RBG.AI,<br>SREC SPARK Incubation Foundation,<br> Sri Ramakrishna Engineering College,<br> Coimbatore, Tamil Nadu 641022, India</span>
               </span>
              </h4>
             <h4>
@@ -549,7 +549,7 @@
         <br>
 
         <hr />
-        <p style="text-align:center">© 2022 RBG.AI. All rights reserved.</p>
+        <p style="text-align:center">© 2021 - 2023 RBG.AI. All rights reserved.</p>
             </div>
 
       </div>
